@@ -5,6 +5,11 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import streamlit as st
 
+import platform, pkgutil
+st.caption(f"Python: {platform.python_version()}")
+st.caption(f"openpyxl present: {bool(pkgutil.find_loader('openpyxl'))}")
+
+
 # =============================================================
 # Zelfstart (kort & solide): druk op Play in VS Code -> 1× streamlit run
 # =============================================================
